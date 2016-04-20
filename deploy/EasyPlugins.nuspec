@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>$id$</id>
+        <version>$version$</version>
+        <title>Easy Plugins</title>
+        <authors>$author$</authors>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>http://github.com/mattjcowan/EasyPlugins</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>$description$</description>
+        <copyright>Copyright (c) 2016 - $author$</copyright>
+        <language>en-US</language>
+        <tags>$id$</tags>
+    </metadata>
+    <files>
+        <!-- UNNECESSARY when using project file in nuget pack command
+        <file src="bin\$configuration$\$id$.dll" target="lib\net461\" />
+        <file src="bin\$configuration$\$id$.pdb" target="lib\net461\" /> -->
+    </files>
+</package>
