@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>EasyPlugins</id>
+        <version>1.0.0</version>
+        <title>Easy Plugins</title>
+        <authors>mattjcowan</authors>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>http://github.com/mattjcowan/EasyPlugins</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A simple plugin management library for .NET</description>
+        <copyright>Copyright © 2016 - mattjcowan</copyright>
+        <language>en-US</language>
+        <tags>EasyPlugins</tags>
+    </metadata>
+    <files>
+        <file src="bin\Release\EasyPlugins.dll" target="lib\net461\EasyPlugins.dll" />
+    </files>
+</package>
