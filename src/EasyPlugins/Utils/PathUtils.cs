@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasyPlugins
+namespace EasyPlugins.Utils
 {
-    public class Class1
+    internal static class PathUtils
     {
     }
 }
