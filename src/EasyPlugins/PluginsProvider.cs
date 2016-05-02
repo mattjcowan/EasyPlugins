@@ -43,9 +43,6 @@ namespace EasyPlugins
             SortManifests(manifests, sortedManifests, new Dictionary<string, int>());
             manifests = sortedManifests.Values.ToList();
 
-            //manifests = manifests.TopoSort(m => m.PluginId,
-            //    m => m.PluginDependencies.Select(d => d.PluginId).ToArray()).ToList();
-
             // Load assemblies for active manifests
             PopulatePluginManifestAssemblies(manifests.Where(m => m.RegistrationInfo.IsActivated).ToList());
 

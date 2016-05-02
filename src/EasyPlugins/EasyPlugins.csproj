@@ -70,7 +70,6 @@
     <Compile Include="Utils\EnumerableExtensions.cs" />
     <Compile Include="Utils\StringExtensions.cs" />
     <Compile Include="Utils\TaskExtensions.cs" />
-    <Compile Include="Utils\TopologicalSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ErrorMessages.resx">
