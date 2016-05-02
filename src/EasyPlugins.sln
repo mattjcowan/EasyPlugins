@@ -1,11 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyPlugins", "EasyPlugins\EasyPlugins.csproj", "{4A1B7EEE-E103-4B46-8EBB-88D37CDA285F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyPlugins.Tests", "EasyPlugins.Tests\EasyPlugins.Tests.csproj", "{CC83EEBE-1456-4572-8EA8-37829B36B869}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7E347BB2-1E34-4E48-B936-E286FF8A3422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyPlugins.Tests", "EasyPlugins.Tests\EasyPlugins.Tests\EasyPlugins.Tests.csproj", "{CC83EEBE-1456-4572-8EA8-37829B36B869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCompany.MyApp.AwesomePlugin1", "EasyPlugins.Tests\EasyPlugins.TestPlugins\MyCompany.MyApp.AwesomePlugin1\MyCompany.MyApp.AwesomePlugin1.csproj", "{08E450C8-8DFB-4A88-97E6-9027D1367E93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCompany.MyApp.AwesomePlugin2", "EasyPlugins.Tests\EasyPlugins.TestPlugins\MyCompany.MyApp.AwesomePlugin2\MyCompany.MyApp.AwesomePlugin2.csproj", "{F107951E-7AE3-46AC-A534-ABBCEE05F0CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCompany.MyApp.AwesomePlugin3", "EasyPlugins.Tests\EasyPlugins.TestPlugins\MyCompany.MyApp.AwesomePlugin3\MyCompany.MyApp.AwesomePlugin3.csproj", "{BADA80CE-551B-40F1-BDD7-E8042AEE96FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCompany.MyApp.AwesomePlugin4", "EasyPlugins.Tests\EasyPlugins.TestPlugins\MyCompany.MyApp.AwesomePlugin4\MyCompany.MyApp.AwesomePlugin4.csproj", "{AE9FA06E-648B-4081-97E3-6A9B1F19A4FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +31,31 @@ Global
 		{CC83EEBE-1456-4572-8EA8-37829B36B869}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC83EEBE-1456-4572-8EA8-37829B36B869}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC83EEBE-1456-4572-8EA8-37829B36B869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E450C8-8DFB-4A88-97E6-9027D1367E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E450C8-8DFB-4A88-97E6-9027D1367E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E450C8-8DFB-4A88-97E6-9027D1367E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E450C8-8DFB-4A88-97E6-9027D1367E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F107951E-7AE3-46AC-A534-ABBCEE05F0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F107951E-7AE3-46AC-A534-ABBCEE05F0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F107951E-7AE3-46AC-A534-ABBCEE05F0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F107951E-7AE3-46AC-A534-ABBCEE05F0CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADA80CE-551B-40F1-BDD7-E8042AEE96FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADA80CE-551B-40F1-BDD7-E8042AEE96FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADA80CE-551B-40F1-BDD7-E8042AEE96FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADA80CE-551B-40F1-BDD7-E8042AEE96FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE9FA06E-648B-4081-97E3-6A9B1F19A4FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE9FA06E-648B-4081-97E3-6A9B1F19A4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE9FA06E-648B-4081-97E3-6A9B1F19A4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE9FA06E-648B-4081-97E3-6A9B1F19A4FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC83EEBE-1456-4572-8EA8-37829B36B869} = {7E347BB2-1E34-4E48-B936-E286FF8A3422}
+		{08E450C8-8DFB-4A88-97E6-9027D1367E93} = {7E347BB2-1E34-4E48-B936-E286FF8A3422}
+		{F107951E-7AE3-46AC-A534-ABBCEE05F0CF} = {7E347BB2-1E34-4E48-B936-E286FF8A3422}
+		{BADA80CE-551B-40F1-BDD7-E8042AEE96FF} = {7E347BB2-1E34-4E48-B936-E286FF8A3422}
+		{AE9FA06E-648B-4081-97E3-6A9B1F19A4FF} = {7E347BB2-1E34-4E48-B936-E286FF8A3422}
 	EndGlobalSection
 EndGlobal

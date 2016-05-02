@@ -1,0 +1,1 @@
+﻿This plugin has NO manifest, and will work under the name MyCompany.MyApp.AwesomePlugin4

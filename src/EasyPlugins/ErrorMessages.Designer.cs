@@ -61,20 +61,56 @@ namespace EasyPlugins {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The plugin manager was already initialized. Please fix your code to ensure it does not get called twice..
+        ///   Looks up a localized string similar to This plugin is marked as activated, but is not installed. Install the plugin to continue ....
         /// </summary>
-        internal static string AlreadyInitialized {
+        internal static string ActivePluginIsNotInstalled {
             get {
-                return ResourceManager.GetString("AlreadyInitialized", resourceCulture);
+                return ResourceManager.GetString("ActivePluginIsNotInstalled", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must first initialize the plugin manager before using an instance of it..
+        ///   Looks up a localized string similar to An unexpected initialization error occurred..
         /// </summary>
-        internal static string MissingInitialization {
+        internal static string InitializationException {
             get {
-                return ResourceManager.GetString("MissingInitialization", resourceCulture);
+                return ResourceManager.GetString("InitializationException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This plugin depends on another missing plugin: {0}.
+        /// </summary>
+        internal static string MissingPluginDependencyFormat {
+            get {
+                return ResourceManager.GetString("MissingPluginDependencyFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The manifest plugin was not found or could not be created from any of the provided reference assemblies..
+        /// </summary>
+        internal static string MissingPluginException {
+            get {
+                return ResourceManager.GetString("MissingPluginException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This plugin has some non-optional dependencies that have not been met..
+        /// </summary>
+        internal static string NonOptionalPluginDependencyExceptions {
+            get {
+                return ResourceManager.GetString("NonOptionalPluginDependencyExceptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must first initialize the plugin manager before attempting to use it..
+        /// </summary>
+        internal static string NotInitialized {
+            get {
+                return ResourceManager.GetString("NotInitialized", resourceCulture);
             }
         }
         
@@ -84,6 +120,60 @@ namespace EasyPlugins {
         internal static string NotSpecified {
             get {
                 return ResourceManager.GetString("NotSpecified", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This plugin depends on another plugin &apos;{0}&apos; that has not been activated..
+        /// </summary>
+        internal static string PluginDependencyInactiveConflictFormat {
+            get {
+                return ResourceManager.GetString("PluginDependencyInactiveConflictFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The plugin {0} version {1} is greater than the maximum version {2} dependency requirement..
+        /// </summary>
+        internal static string PluginDependencyMaxVersionConflictFormat {
+            get {
+                return ResourceManager.GetString("PluginDependencyMaxVersionConflictFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The plugin {0} version {1} is less than the minimum version {2} dependency requirement..
+        /// </summary>
+        internal static string PluginDependencyMinVersionConflictFormat {
+            get {
+                return ResourceManager.GetString("PluginDependencyMinVersionConflictFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while attempting to download the plugin..
+        /// </summary>
+        internal static string PluginDownloadException {
+            get {
+                return ResourceManager.GetString("PluginDownloadException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The plugin manager was already initialized. Please fix your code to ensure it does not get called twice..
+        /// </summary>
+        internal static string PluginManagerAlreadyInitialized {
+            get {
+                return ResourceManager.GetString("PluginManagerAlreadyInitialized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The plugin provider was already initialized. Only one plugin provider of this type can exist in the system at one time..
+        /// </summary>
+        internal static string PluginProviderAlreadyInitialized {
+            get {
+                return ResourceManager.GetString("PluginProviderAlreadyInitialized", resourceCulture);
             }
         }
     }

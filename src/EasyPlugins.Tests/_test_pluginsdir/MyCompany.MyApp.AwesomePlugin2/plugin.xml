@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugin>
+  <PluginId>MyCompany.MyApp.AwesomePlugin2</PluginId>
+  <PluginTypeName>MyCompany.MyApp.AwesomePlugin2.NonEasyPlugin</PluginTypeName>
+  <PluginTitle>My awesome plugin 2</PluginTitle>
+  <PluginDescription>An awesome plugin for my awesome app</PluginDescription>
+  <PluginUrl>http://github.com/mycompany/MyApp.AwesomePlugin2</PluginUrl>
+  <PluginVersion>1.0.5</PluginVersion>
+  <PluginDefaultSettings>
+    <setting key="ABC">DEF1</setting>
+    <setting key="ABCD">DEF2</setting>
+    <setting key="ABCE">DEF3</setting>
+    <setting key="ABCF">DEF4</setting>
+  </PluginDefaultSettings>
+  <PluginCategory>MyApp</PluginCategory>
+  <PluginTags>
+    <Tag>MyCompany</Tag>
+    <Tag>MyApp</Tag>
+    <Tag>AwesomePlugin</Tag>
+  </PluginTags>
+  <PluginDependencies>
+    <Dependency PluginId="MyCompany.MyApp.AwesomePlugin3" MinVersion="1.0.0" MaxVersion="5.0.0" Optional="False" />
+  </PluginDependencies>
+  <Author>@mattjcowan</Author>
+  <AuthorUrl>http://www.mattjcowan.com</AuthorUrl>
+  <License>MIT</License>
+  <LicenseUrl>http://path_to_license_url</LicenseUrl>
+</Plugin>

@@ -3,7 +3,13 @@
     public enum ErrorCode
     {
         NotSpecified,
-        MissingInitialization,
-        AlreadyInitialized
+        NotInitialized,
+        PluginManagerAlreadyInitialized,
+        InitializationException,
+        PluginDownloadException,
+        PluginProviderAlreadyInitialized,
+        NonOptionalPluginDependencyExceptions,
+        ActivePluginIsNotInstalled,
+        MissingPluginException
     }
 }

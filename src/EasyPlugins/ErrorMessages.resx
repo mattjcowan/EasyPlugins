@@ -117,13 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AlreadyInitialized" xml:space="preserve">
-    <value>The plugin manager was already initialized. Please fix your code to ensure it does not get called twice.</value>
+  <data name="ActivePluginIsNotInstalled" xml:space="preserve">
+    <value>This plugin is marked as activated, but is not installed. Install the plugin to continue ...</value>
   </data>
-  <data name="MissingInitialization" xml:space="preserve">
-    <value>You must first initialize the plugin manager before using an instance of it.</value>
+  <data name="InitializationException" xml:space="preserve">
+    <value>An unexpected initialization error occurred.</value>
+  </data>
+  <data name="MissingPluginDependencyFormat" xml:space="preserve">
+    <value>This plugin depends on another missing plugin: {0}</value>
+  </data>
+  <data name="MissingPluginException" xml:space="preserve">
+    <value>The manifest plugin was not found or could not be created from any of the provided reference assemblies.</value>
+  </data>
+  <data name="NonOptionalPluginDependencyExceptions" xml:space="preserve">
+    <value>This plugin has some non-optional dependencies that have not been met.</value>
+  </data>
+  <data name="NotInitialized" xml:space="preserve">
+    <value>You must first initialize the plugin manager before attempting to use it.</value>
   </data>
   <data name="NotSpecified" xml:space="preserve">
     <value>An unspecified error has occurred inside the EasyPlugins library.</value>
+  </data>
+  <data name="PluginDependencyInactiveConflictFormat" xml:space="preserve">
+    <value>This plugin depends on another plugin '{0}' that has not been activated.</value>
+  </data>
+  <data name="PluginDependencyMaxVersionConflictFormat" xml:space="preserve">
+    <value>The plugin {0} version {1} is greater than the maximum version {2} dependency requirement.</value>
+  </data>
+  <data name="PluginDependencyMinVersionConflictFormat" xml:space="preserve">
+    <value>The plugin {0} version {1} is less than the minimum version {2} dependency requirement.</value>
+  </data>
+  <data name="PluginDownloadException" xml:space="preserve">
+    <value>An error occurred while attempting to download the plugin.</value>
+  </data>
+  <data name="PluginManagerAlreadyInitialized" xml:space="preserve">
+    <value>The plugin manager was already initialized. Please fix your code to ensure it does not get called twice.</value>
+  </data>
+  <data name="PluginProviderAlreadyInitialized" xml:space="preserve">
+    <value>The plugin provider was already initialized. Only one plugin provider of this type can exist in the system at one time.</value>
   </data>
 </root>
