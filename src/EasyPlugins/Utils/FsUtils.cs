@@ -9,7 +9,7 @@ using System.Web.Hosting;
 
 namespace EasyPlugins.Utils
 {
-    internal static class FsUtils
+    public static class FsUtils
     {
         public static void DeleteDirectory(string path, bool recurse = false)
         {

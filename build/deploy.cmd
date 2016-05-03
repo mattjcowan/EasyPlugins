@@ -24,12 +24,12 @@ ECHO You are missing an api key and/or version number! Bye bye!!
 GOTO End
 
 :Deploy
-call AssemblyVersionInfo.bat %packageVersion%
+call set-assembly-version.cmd %packageVersion%
 "C:\Program Files (x86)\MSBuild\14.0\Bin\MsBuild.exe" ..\src\EasyPlugins\EasyPlugins.csproj /p:Configuration=Release /nologo /verbosity:m
 robocopy .\ ..\src\EasyPlugins EasyPlugins.nuspec /NJH /NJS
 nuget pack ..\src\EasyPlugins\EasyPlugins.csproj -Properties "Configuration=Release;Platform=AnyCPU" -IncludeReferencedProjects -symbols -NoPackageAnalysis
 del ..\src\EasyPlugins\EasyPlugins.nuspec
-set /P pushPrompt=Would you like to push the package to nuget.org (y/N)? 
+set /P pushPrompt=Ready to push the package to nuget.org (y/N)? 
 if "%pushPrompt%"=="y" GOTO Push
 if "%pushPrompt%"=="Y" GOTO Push
 if "%pushPrompt%"=="yes" GOTO Push
